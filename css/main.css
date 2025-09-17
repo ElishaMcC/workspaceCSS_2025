@@ -4,12 +4,18 @@
 :root{
     --body-color: hsl(248, 53%, 58%);
     --page-color: hsl(40, 1%, 44%);
+    --sidebar-color: hsl(51, 100%, 50%);
 }
 
 
 body{
     background-color: var(--body-color);
 }
+
 #zen-intro{
     background-color: var(--page-color);
+}
+
+.sidebar{
+    background-color: var(--sidebar-color);
 }
