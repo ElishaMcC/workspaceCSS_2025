@@ -9,7 +9,7 @@
 
 
 body{
-    background-color: var(--body-color);
+    background-color: hsl(51, 100%, 50%);
 }
 
 #zen-intro{
