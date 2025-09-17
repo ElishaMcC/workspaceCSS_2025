@@ -9,13 +9,13 @@
 
 
 body{
-    background-color: hsl(51, 100%, 50%);
+    background-color: var(--body-color);
 }
 
 #zen-intro{
-    background-color: hsl(40, 1%, 44%);
+    background-color: var(--page-color) !important;
 }
 
 .sidebar{
-    background-color: var(--sidebar-color);
+    background-color: var(--sidebar-color) !important;
 }
