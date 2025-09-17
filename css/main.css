@@ -13,7 +13,7 @@ body{
 }
 
 #zen-intro{
-    background-color: var(--page-color);
+    background-color: hsl(40, 1%, 44%);
 }
 
 .sidebar{
