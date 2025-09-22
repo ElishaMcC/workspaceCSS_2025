@@ -43,3 +43,11 @@ div.benefits{
 div.requirements{
     left: 62vw
 }
+
+aside.sidebar{
+    position: absolute;
+    top: 17%;
+    right: 0%;
+    bottom: 0;
+    width: 10%;
+}
