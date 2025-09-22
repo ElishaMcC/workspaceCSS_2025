@@ -51,3 +51,17 @@ aside.sidebar{
     bottom: 0;
     width: 10%;
 }
+
+div.extra2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+}
+div.extra1{
+    position: fixed;
+    left: 17%;
+    height: 55vh;
+    width: 40;
+}
