@@ -26,22 +26,23 @@ div.explanation, div.participation, div.requirements, div.benefits{
     position: fixed;
     width: var(--page-width);
     top: var(--page-top);
+    z-index: 5;
 }
 
 div.explanation{
-    left: 2vw;
+    left: 0vw;
 }
 
 div.participation{
-    left: 22vw;
+    left: 30vw;
 }
 
 div.benefits{
-    left: 42vw;
+    left: 48vw;
 }
 
 div.requirements{
-    left: 62vw
+    left: 66vw
 }
 
 aside.sidebar{
@@ -49,24 +50,18 @@ aside.sidebar{
     top: 17%;
     right: 0%;
     bottom: 0;
-    width: 10%;
-}
-
-section.intro{
-    position: fixed;
-    left: 17%;
-    height: 55vh;
-    width: 40vw;
-    rotate: 343deg;
+    width: 18%;
+    z-index: 21;
 }
 
 div.extra1{
     position: fixed;
     left: 17%;
-    height: 55vh;
-    width: 40vw;
+    height: 90%;
+    width: 58%;
     background-image: url(/img/newspaper2.jpg);
-    rotate: 17deg;
+    rotate: 10deg;
+    z-index: 1;
 }
 
 div.extra2{
@@ -74,9 +69,18 @@ div.extra2{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 15%;
+    height: 10%;
     background-color: hsl(51, 45%, 50%);
+    z-index: 6;
 }
 
+section.intro{
+    position: fixed;
+    left: 17%;
+    height: 90%;
+    width: 58%;
+    rotate: 350deg;
+    z-index: 3;
+}
 
 
