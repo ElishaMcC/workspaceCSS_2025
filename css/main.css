@@ -58,10 +58,20 @@ div.extra2{
     left: 0;
     right: 0;
     height: 10%;
+    background-color: hsl(51, 45%, 50%);
 }
 div.extra1{
     position: fixed;
     left: 17%;
     height: 55vh;
     width: 40;
+    background-image: url(/img/newspaper2.jpg);
+    rotate: 17deg;
+}
+section.intro{
+    position: fixed;
+    left: 17%;
+    height: 55vh;
+    width: 40;
+    rotate: 343deg;
 }
