@@ -27,3 +27,19 @@ div.explanation, div.participation, div.requirements, div.benefits{
     width: var(--page-width);
     top: var(--page-top);
 }
+
+div.explanation{
+    left: 2vw;
+}
+
+div.participation{
+    left: 22vw;
+}
+
+div.benefits{
+    left: 42vw;
+}
+
+div.requirements{
+    left: 62vw
+}
