@@ -6,9 +6,17 @@
     --page-color: hsl(40, 1%, 44%);
     --sidebar-color: hsl(51, 100%, 50%);
     --page-width: 60%;
-    --page-top: 85%;
+    --page-top: 87%;
+    --file: hsl(51, 45%, 50%);
 }
 
+
+header h1{
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
 
 body{
     background-color: var(--body-color);
@@ -25,33 +33,56 @@ body{
 div.explanation, div.participation, div.requirements, div.benefits{
     position: fixed;
     width: var(--page-width);
+    height: 50vh;
     top: var(--page-top);
-    z-index: 5;
+    background-color: var(--file);
+    z-index: 9;
+    transition: top .5s ease-in-out;
+    visibility: collapse;
 }
+div.explanation:hover, div.participation:hover, div.requirements:hover, div.benefits:hover{
+    visibility: visible;
+    top: 50%;
+}
+div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3{
+    border: .5px solid white;
+    display: inline;
+    padding: .2em;
+    background-color: var(--file);
+    margin-bottom: 10vh;
+    visibility: visible;
+}
+
 
 div.explanation{
     left: 0vw;
+    
 }
 
+
+
 div.participation{
-    left: 30vw;
+    left: 15vw;
+    
 }
 
 div.benefits{
-    left: 48vw;
+    left: 24.2vw;
+    
 }
 
 div.requirements{
-    left: 66vw
+    left: 31vw;
+    
 }
 
 aside.sidebar{
     position: absolute;
-    top: 17%;
+    top: 20%;
+    bottom: 15%;
     right: 0%;
-    bottom: 0;
-    width: 18%;
-    z-index: 21;
+    width: 20%;
+    z-index: 7;
 }
 
 div.extra1{
@@ -70,8 +101,8 @@ div.extra2{
     left: 0;
     right: 0;
     height: 10%;
-    background-color: hsl(51, 45%, 50%);
-    z-index: 6;
+    background-color: var(--file);
+    z-index: 10;
 }
 
 section.intro{
@@ -81,6 +112,11 @@ section.intro{
     width: 58%;
     rotate: 350deg;
     z-index: 3;
+}
+
+
+.design-archives, .zen-resources{
+    display: none;
 }
 
 
