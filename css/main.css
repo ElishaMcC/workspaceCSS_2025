@@ -8,6 +8,7 @@
     --page-width: 60%;
     --page-top: 87%;
     --file: hsl(51, 45%, 50%);
+    --file2: hsl(51, 75%, 74%);
 }
 
 
@@ -33,16 +34,14 @@ body{
 div.explanation, div.participation, div.requirements, div.benefits{
     position: fixed;
     width: var(--page-width);
-    height: 50vh;
+    height: 80vh;
     top: var(--page-top);
-    background-color: var(--file);
     z-index: 9;
     transition: top .5s ease-in-out;
-    visibility: collapse;
 }
 div.explanation:hover, div.participation:hover, div.requirements:hover, div.benefits:hover{
     visibility: visible;
-    top: 50%;
+    top: 10%;
 }
 div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3{
     border: .5px solid white;
@@ -51,6 +50,11 @@ div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3{
     background-color: var(--file);
     margin-bottom: 10vh;
     visibility: visible;
+    border-radius: 0 5% 5% 0;
+}
+
+div.explanation, div.participation, div.benefits, div.requirements:not(h3){
+    background-color: var(--file2);
 }
 
 
@@ -93,6 +97,7 @@ div.extra1{
     background-image: url(/img/newspaper2.jpg);
     rotate: 10deg;
     z-index: 1;
+    box-shadow: 1vw 1vh 3px hsla(0, 0%, 0%, 0.5);
 }
 
 div.extra2{
@@ -112,11 +117,16 @@ section.intro{
     width: 58%;
     rotate: 350deg;
     z-index: 3;
+    box-shadow: 1vw 1vh 3px rgba(0, 0, 0, 0.5);
 }
 
 
 .design-archives, .zen-resources{
     display: none;
+}
+footer a{
+    text-shadow: 1vw 1vh 3px hsla(0, 0%, 0%, 0.25);
+    background-color: aliceblue;
 }
 
 
