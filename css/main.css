@@ -11,6 +11,13 @@
     --file2: hsl(51, 75%, 74%);
 }
 
+.page-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
 
 header h1{
     font-family: "Alan Sans", sans-serif;
@@ -37,7 +44,8 @@ div.explanation, div.participation, div.requirements, div.benefits{
     height: 80vh;
     top: var(--page-top);
     z-index: 9;
-    transition: top .5s ease-in-out;
+    visibility: hidden;
+    transition: .5s ease-in;
 }
 div.explanation:hover, div.participation:hover, div.requirements:hover, div.benefits:hover{
     visibility: visible;
@@ -50,7 +58,7 @@ div.explanation h3, div.participation h3, div.benefits h3, div.requirements h3{
     background-color: var(--file);
     margin-bottom: 10vh;
     visibility: visible;
-    border-radius: 0 5% 5% 0;
+    border-radius: 0 20% 0 0;
 }
 
 div.explanation, div.participation, div.benefits, div.requirements:not(h3){
@@ -62,8 +70,6 @@ div.explanation{
     left: 0vw;
     
 }
-
-
 
 div.participation{
     left: 15vw;
@@ -87,6 +93,7 @@ aside.sidebar{
     right: 0%;
     width: 20%;
     z-index: 7;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 80%);
 }
 
 div.extra1{
@@ -118,6 +125,7 @@ section.intro{
     rotate: 350deg;
     z-index: 3;
     box-shadow: 1vw 1vh 3px rgba(0, 0, 0, 0.5);
+    animation: colorGrad 5s ease-in-out infinite alternate;
 }
 
 
@@ -127,6 +135,13 @@ section.intro{
 footer a{
     text-shadow: 1vw 1vh 3px hsla(0, 0%, 0%, 0.25);
     background-color: aliceblue;
+}
+
+@keyframes colorGrad{
+    0%{background-image: linear-gradient(50deg, blue, green);}
+    50%{background-image: linear-gradient(50deg, green, yellow);}
+    75%{background-image: linear-gradient(50deg, yellow, blue);}
+    100%{background-image: linear-gradient(50deg, blue, green);}
 }
 
 
