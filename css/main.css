@@ -30,8 +30,8 @@ body{
     background-color: var(--body-color);
 }
 
-#zen-intro{
-    background-color: var(--page-color) !important;
+footer{
+    z-index: 3;
 }
 
 .sidebar{
@@ -103,8 +103,9 @@ div.extra1{
     width: 58%;
     background-image: url(/img/newspaper2.jpg);
     rotate: 10deg;
-    z-index: 1;
+    z-index: 0;
     box-shadow: 1vw 1vh 3px hsla(0, 0%, 0%, 0.5);
+    animation: sway 30s ease infinite;
 }
 
 div.extra2{
@@ -118,6 +119,8 @@ div.extra2{
 }
 
 section.intro{
+    background: linear-gradient(50deg, blue, green, yellow, orange, red, purple, blue);
+    background-size: 800% 800%;
     position: fixed;
     left: 17%;
     height: 90%;
@@ -125,7 +128,7 @@ section.intro{
     rotate: 350deg;
     z-index: 3;
     box-shadow: 1vw 1vh 3px rgba(0, 0, 0, 0.5);
-    animation: colorGrad 5s ease-in-out infinite alternate;
+    animation: colorGrad 30s ease infinite;
 }
 
 
@@ -138,10 +141,21 @@ footer a{
 }
 
 @keyframes colorGrad{
-    0%{background-image: linear-gradient(50deg, blue, green);}
-    50%{background-image: linear-gradient(50deg, green, yellow);}
-    75%{background-image: linear-gradient(50deg, yellow, blue);}
-    100%{background-image: linear-gradient(50deg, blue, green);}
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+@keyframes sway{
+    0%{
+        rotate: 10deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    0%{
+        rotate: 10deg;
+    }
 }
 
 
